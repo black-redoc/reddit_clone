@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_item"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/thumbnail"
+            tools:src="@drawable/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/subreddit_txt"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/secondary"
+                    android:textFontWeight="700"
+                    android:textSize="20dp"
+                    tools:text="r/WizardyoureaHarry"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/author_txt"
+                    android:layout_width="wrap_content"
+                    android:textFontWeight="600"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    tools:text="u/CODMobile_Official"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:src="@drawable/lock_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_txt"
+            tools:text="💀💀💀💀💀💀💀"
+            android:layout_alignParentLeft="true"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/title_txt"
+
+            android:id="@+id/award_txt"
+            tools:text="24 Awards"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        tools:text="@string/test_description_text"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/image_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <VideoView
+        android:visibility="gone"
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/ups_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/up_arrow_icon"
+            android:textColor="@color/black"
+            tools:text="349k" />
+
+        <Button
+            android:id="@+id/num_comments_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/message_icon"
+            android:textColor="@color/black"
+            tools:text="4.4k" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/share_icon"
+            android:textColor="@color/black"
+            android:text="Share"/>
+
+        <ImageButton
+            android:src="@drawable/gift_icon"
+            android:backgroundTint="@color/white"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+</LinearLayout>
